@@ -1,20 +1,48 @@
 body {
     display: flex;
+    flex-direction: column; /* Stack button and grid vertically */
+    align-items: center;    /* Center-align button and grid */
     justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
-
+    background-color: #e1f5e1;
 }
+
+button {
+    margin-bottom: 20px; /* Add space below the button */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green background */
+    color: white;             /* White text */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
 .container16 {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid #000; 
+    border: 8px solid red; 
+
 }
 .cell {
-    border: 1px solid #ccc;
-    background-color: lightgray;
+    border: .5px solid #000;
+    background-color: white;
     width: 20px;
     height: 20px;
     box-sizing: border-box;
+}
+
+.cell:hover {
+background-color: #000;
+}
+
+button.button2 {
+    margin-top: 20px;
 }
